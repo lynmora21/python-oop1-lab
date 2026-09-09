@@ -135,6 +135,44 @@ Before you submit your solution, you need to save your progress with git.
 2. Create a commit by executing git commit -m "Your commit message"
 3. Push your commits to GitHub by executing git push origin main or git push origin master , depending on the name of your branch (use git branch to check on which branch you are).
 
+## Bookstore Classes
+
+This project models two objects used in a bookstore: books and coffee.
+
+### Book
+
+The `Book` class includes:
+
+- `title` — the title of the book
+- `page_count` — the number of pages in the book
+- `turn_page()` — prints a message when the reader turns a page
+
+The `page_count` property validates that the value is an integer.
+
+### Coffee
+
+The `Coffee` class includes:
+
+- `size` — the size of the coffee
+- `price` — the price of the coffee
+- `tip()` — prints a message and increases the coffee price by $1
+
+The `size` property only accepts:
+
+- Small
+- Medium
+- Large
+
+### Testing
+
+The project uses pytest for test-driven development.
+
+All 7 tests pass successfully:
+
+```text
+7 passed
+```
+
 ## Submission and Grading Criteria
 
 1. Use the rubric in Canvas as a guide for how this lab is graded.
@@ -144,3 +182,15 @@ Before you submit your solution, you need to save your progress with git.
   * Click on + Create Submission. Connect your repository for this lab.
   * For additional information on submitting assignments in CodeGrade: [Getting Started in Canvas](https://help.codegrade.com/for-students/getting-started/getting-started-in-canvas)
 
+
+---
+
+## 2. Take your screenshot
+
+You already have the perfect evidence:
+
+```text
+============================== 7 passed in 0.01s ===============================
+## Test Results
+
+![All 7 tests passing](screenshots/tests-passing.png)
